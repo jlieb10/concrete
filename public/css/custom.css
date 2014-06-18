@@ -1,0 +1,28 @@
+body {
+  font-weight: 400;
+  background: black;
+}
+
+h1, h2, h3 {
+  line-height: 1em;
+}
+
+h1 {
+  font-weight: 900;
+  color: white;
+}
+
+h2, h2 a, h2 a:hover, h2 a:active, h2 a:visited, h3 a, h3 a:hover, h3 a:active, h3 a:visited {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+div#poem {
+  display: inline-block;
+  max-width: 600px;
+  font-family: "Courier New";
+  word-wrap: break-word;
+  text-wrap: normal;
+  text-align: justify;
+}

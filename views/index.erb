@@ -1,0 +1,13 @@
+<h1><%= @randwords %></h1>
+<div id="poem">
+  <% if @randtweets.length != 0 %>
+  <h2><%= @randtweets %></h2>
+    <% else %>
+  <h2><A HREF="javascript:history.go(0)">No Tweets Found -- Click To Refresh</A></h2>
+    <% end %>
+    <br><br><br>
+    <h3><A HREF="javascript:history.go(0)">click to refresh</A></h3>
+</div>
+<div>
+  <br>
+  </div>
