@@ -12,8 +12,6 @@ module PoemApp
       set :public_folder, 'public'
     end
 
-    set :database, "sqlite3:///database.db"
-
     get '/' do
       @randwords = Word.random
       @randwords = @randwords.join(" ")
