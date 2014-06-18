@@ -3,8 +3,8 @@ require_relative "../app.rb"
 class TweetClass
   #def initialize
     CLIENT = Twitter::REST::Client.new do |config|
-      config.consumer_key = "RJihjlphxnk1BGVUxESbOEpDq"
-      config.consumer_secret = "N9K1lkEEZE0nspZhMo3zaCGC8PpmCXrhFM3xTSFsKBetlhFn2I"
+      config.consumer_key = ""
+      config.consumer_secret = ""
     end
   #end
 
