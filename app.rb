@@ -13,8 +13,8 @@ module PoemApp
     end
 
     get '/' do
-      @randwords = Word.random
-      @randtweets = TweetClass.search(@randwords.join(" "))
+      @randwords = Word.random.join(" ")
+      @randtweets = TweetClass.search(@randwords)
       erb :index
     end
 
