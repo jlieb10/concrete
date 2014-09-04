@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'bundler'
-require 'pry'
 
 Bundler.require
 
@@ -10,11 +9,9 @@ end
 
 module PoemApp
   class App < Sinatra::Application
-
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'
-      #set :environment, :production
     end
 
     get '/' do
