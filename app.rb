@@ -14,12 +14,7 @@ module PoemApp
 
     get '/' do
       @randwords = Word.random
-      @randwords = @randwords.join(" ")
-      @randtweets = TweetClass.search(@randwords)
-      erb :index
-    end
-
-    post '/' do
+      @randtweets = TweetClass.search(@randwords.join(" "))
       erb :index
     end
 

@@ -1,9 +1,6 @@
 source "https://rubygems.org"
+gem "dotenv"
 gem "sinatra"
-gem "activerecord"
-gem "sinatra-activerecord"
-gem "rake"
-gem "shotgun"
-gem "pg"
 gem "twitter"
 gem "oauth"
+gem "shotgun", :groups => [:development, :test]
