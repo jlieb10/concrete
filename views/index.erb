@@ -3,6 +3,7 @@
 </header>
 <h1><%= @randwords %></h1>
 <div id="poem">
+  <%= Sinatra::Application.environment %>
   <% if @randtweets.length != 0 %>
   <h2><%= @randtweets %></h2>
     <% else %>
