@@ -1,7 +1,7 @@
 class TweetClass
   CLIENT = Twitter::REST::Client.new do |config|
-    config.consumer_key = ENV["TWITTER_KEY"]
-    config.consumer_secret = ENV["TWITTER_SECRET"]
+    config.consumer_key = "RJihjlphxnk1BGVUxESbOEpDq"# ENV["TWITTER_KEY"]
+    config.consumer_secret = "N9K1lkEEZE0nspZhMo3zaCGC8PpmCXrhFM3xTSFsKBetlhFn2I"#ENV["TWITTER_SECRET"]
   end
 
   def self.search(words)

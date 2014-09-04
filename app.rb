@@ -10,10 +10,11 @@ end
 
 module PoemApp
   class App < Sinatra::Application
+
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'
-      set :environment, :production
+      #set :environment, :production
     end
 
     get '/' do
@@ -21,6 +22,5 @@ module PoemApp
       @randtweets = TweetClass.search(@randwords)
       erb :index
     end
-
   end
 end
